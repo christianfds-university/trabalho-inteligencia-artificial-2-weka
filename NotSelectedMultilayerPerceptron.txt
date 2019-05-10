@@ -1,0 +1,393 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     CMC
+Instances:    1473
+Attributes:   10
+              W.Age
+              W.Education
+              H.Education
+              Children
+              W.Islamic
+              W.Working
+              H.occupation
+              Standard-of-living
+              MediaExposure
+              MethodUsed
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.406661604777204
+    Node 3    -1.817670992079602
+    Node 4    -5.125549504592819
+    Node 5    1.7093009104811572
+    Node 6    -0.9248141059432349
+    Node 7    3.259304731021303
+    Node 8    1.3643636423857393
+    Node 9    -3.3538350590308084
+    Node 10    0.29542983423374847
+    Node 11    2.9349479466638253
+    Node 12    4.236715954197186
+    Node 13    -0.09916661113540051
+    Node 14    0.8761348023452901
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.3671392240919048
+    Node 3    -0.5465119138475248
+    Node 4    1.8975589136279853
+    Node 5    -0.9011050588707287
+    Node 6    -2.4338295074347696
+    Node 7    -2.574825615642584
+    Node 8    0.33847069238674526
+    Node 9    1.6422018216407686
+    Node 10    1.4713794917657779
+    Node 11    -0.9906126876639936
+    Node 12    -3.9896930416570036
+    Node 13    -3.071161335426942
+    Node 14    1.8896206849758796
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.6516050040874499
+    Node 3    2.392109360596111
+    Node 4    -1.4609712536563169
+    Node 5    -1.013829777116039
+    Node 6    2.5544909105844513
+    Node 7    -2.4576867609476922
+    Node 8    -2.092893640802908
+    Node 9    3.0729244869680055
+    Node 10    -1.8799029390275313
+    Node 11    -3.87470362006586
+    Node 12    -3.671687254647064
+    Node 13    1.912154780153011
+    Node 14    -1.746541514823188
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.7692467288350396
+    Attrib W.Age    -5.2910040477115965
+    Attrib W.Education=Low    -1.2484733327480793
+    Attrib W.Education=MidLow    -2.2503975321608483
+    Attrib W.Education=MidHigh    -0.26697682123199223
+    Attrib W.Education=High    5.379509298053553
+    Attrib H.Education=Low    -0.07906553394884641
+    Attrib H.Education=MidLow    0.09628073800918704
+    Attrib H.Education=MidHigh    1.8936283569544197
+    Attrib H.Education=High    -0.28339227682679474
+    Attrib Children    1.5140810596905323
+    Attrib W.Islamic=Islamic    -11.041125511776167
+    Attrib W.Working=No    -2.2909837984397368
+    Attrib H.occupation=Low    -4.073412420836171
+    Attrib H.occupation=MidLow    -4.572368432081837
+    Attrib H.occupation=MidHigh    4.0065005472332125
+    Attrib H.occupation=High    6.17806324410372
+    Attrib Standard-of-living=Low    1.4833660516041596
+    Attrib Standard-of-living=MidLow    -0.9865906940257028
+    Attrib Standard-of-living=MidHigh    -4.373981371143841
+    Attrib Standard-of-living=High    5.455640694916865
+    Attrib MediaExposure=NotGood    9.212145602858957
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -3.9198377905212096
+    Attrib W.Age    9.302107404225488
+    Attrib W.Education=Low    -3.830218088260106
+    Attrib W.Education=MidLow    -0.894574980039373
+    Attrib W.Education=MidHigh    5.46058633196529
+    Attrib W.Education=High    7.176473223685578
+    Attrib H.Education=Low    3.1921778758761796
+    Attrib H.Education=MidLow    3.817520845793281
+    Attrib H.Education=MidHigh    4.704771494470382
+    Attrib H.Education=High    -3.923168735102559
+    Attrib Children    6.592931269187456
+    Attrib W.Islamic=Islamic    -7.041649943795977
+    Attrib W.Working=No    -3.947673532344043
+    Attrib H.occupation=Low    8.619621034416307
+    Attrib H.occupation=MidLow    0.4383279426412013
+    Attrib H.occupation=MidHigh    -3.3666526197058673
+    Attrib H.occupation=High    2.1205534607415295
+    Attrib Standard-of-living=Low    3.344090346398349
+    Attrib Standard-of-living=MidLow    -0.6150954334593313
+    Attrib Standard-of-living=MidHigh    3.6559442175628827
+    Attrib Standard-of-living=High    1.423725809996211
+    Attrib MediaExposure=NotGood    -4.522229077936863
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -4.727292369623791
+    Attrib W.Age    -11.134744021995683
+    Attrib W.Education=Low    0.828665614959679
+    Attrib W.Education=MidLow    4.3317349318466825
+    Attrib W.Education=MidHigh    2.4753867344308165
+    Attrib W.Education=High    1.7831120065966124
+    Attrib H.Education=Low    -3.0686073426481855
+    Attrib H.Education=MidLow    0.953447298717712
+    Attrib H.Education=MidHigh    8.70513376685184
+    Attrib H.Education=High    2.831011332049835
+    Attrib Children    -9.55520023674258
+    Attrib W.Islamic=Islamic    -0.6205335933472848
+    Attrib W.Working=No    -7.638187232715307
+    Attrib H.occupation=Low    -4.002834991534532
+    Attrib H.occupation=MidLow    4.518148715348375
+    Attrib H.occupation=MidHigh    5.256268223764687
+    Attrib H.occupation=High    3.6614228906578314
+    Attrib Standard-of-living=Low    -6.400697153116311
+    Attrib Standard-of-living=MidLow    10.88493630908647
+    Attrib Standard-of-living=MidHigh    0.6779397945535667
+    Attrib Standard-of-living=High    4.203032138695005
+    Attrib MediaExposure=NotGood    -3.4203981362500726
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.2816369783709067
+    Attrib W.Age    -5.258450025230323
+    Attrib W.Education=Low    -1.728565930429075
+    Attrib W.Education=MidLow    5.358435219445345
+    Attrib W.Education=MidHigh    -4.919747790987611
+    Attrib W.Education=High    3.7247576530599074
+    Attrib H.Education=Low    -7.191291399018643
+    Attrib H.Education=MidLow    5.291158345143804
+    Attrib H.Education=MidHigh    8.905523246518923
+    Attrib H.Education=High    -4.467861092168646
+    Attrib Children    -3.3580641172189183
+    Attrib W.Islamic=Islamic    -5.078152057695728
+    Attrib W.Working=No    0.2651024930627322
+    Attrib H.occupation=Low    -6.966625823521875
+    Attrib H.occupation=MidLow    5.515442372026253
+    Attrib H.occupation=MidHigh    1.631339524753277
+    Attrib H.occupation=High    2.2621246503330585
+    Attrib Standard-of-living=Low    4.323997093403564
+    Attrib Standard-of-living=MidLow    -4.0828115285950295
+    Attrib Standard-of-living=MidHigh    9.8816375749277
+    Attrib Standard-of-living=High    -7.623894519688492
+    Attrib MediaExposure=NotGood    7.352766108636359
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -5.697070806188806
+    Attrib W.Age    5.367002945974134
+    Attrib W.Education=Low    0.7411198648963144
+    Attrib W.Education=MidLow    5.945909844703763
+    Attrib W.Education=MidHigh    1.785903777029738
+    Attrib W.Education=High    2.7386050155197696
+    Attrib H.Education=Low    3.583509296072102
+    Attrib H.Education=MidLow    5.314186022040346
+    Attrib H.Education=MidHigh    0.8500648662163639
+    Attrib H.Education=High    1.5840203128090007
+    Attrib Children    -45.33496950665384
+    Attrib W.Islamic=Islamic    -1.0609418260226209
+    Attrib W.Working=No    0.8374724345446168
+    Attrib H.occupation=Low    3.1903263828929402
+    Attrib H.occupation=MidLow    2.443231154235872
+    Attrib H.occupation=MidHigh    4.686368469279386
+    Attrib H.occupation=High    1.1017699123312268
+    Attrib Standard-of-living=Low    4.654842693569005
+    Attrib Standard-of-living=MidLow    0.31446312326388187
+    Attrib Standard-of-living=MidHigh    2.9877577225663345
+    Attrib Standard-of-living=High    3.3531060695489248
+    Attrib MediaExposure=NotGood    8.332645595786708
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.4265220905869307
+    Attrib W.Age    8.70339565257833
+    Attrib W.Education=Low    2.411723534503822
+    Attrib W.Education=MidLow    4.313217661085792
+    Attrib W.Education=MidHigh    -5.810512732488652
+    Attrib W.Education=High    1.9555676220888432
+    Attrib H.Education=Low    7.286094483755196
+    Attrib H.Education=MidLow    -2.435403941368248
+    Attrib H.Education=MidHigh    -2.439062344781612
+    Attrib H.Education=High    0.5156110823187917
+    Attrib Children    2.9113296242992543
+    Attrib W.Islamic=Islamic    -10.400239012437847
+    Attrib W.Working=No    7.144987211794072
+    Attrib H.occupation=Low    4.18951966970081
+    Attrib H.occupation=MidLow    5.698885384844988
+    Attrib H.occupation=MidHigh    -4.286452006863999
+    Attrib H.occupation=High    -2.6705102206144424
+    Attrib Standard-of-living=Low    9.900179162470662
+    Attrib Standard-of-living=MidLow    3.1216900424501905
+    Attrib Standard-of-living=MidHigh    -2.0663290373534675
+    Attrib Standard-of-living=High    -8.07064021456471
+    Attrib MediaExposure=NotGood    -5.404280954762572
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.9863160095313956
+    Attrib W.Age    -6.305015064805968
+    Attrib W.Education=Low    8.79086666643602
+    Attrib W.Education=MidLow    0.8628545073829955
+    Attrib W.Education=MidHigh    -2.6041644832770183
+    Attrib W.Education=High    -3.074522796029014
+    Attrib H.Education=Low    7.81213926039577
+    Attrib H.Education=MidLow    4.8747338494633485
+    Attrib H.Education=MidHigh    -8.81441315011649
+    Attrib H.Education=High    0.20283518030451506
+    Attrib Children    -4.625262231378761
+    Attrib W.Islamic=Islamic    -9.5049629362562
+    Attrib W.Working=No    -1.8476934976505146
+    Attrib H.occupation=Low    2.154658293158785
+    Attrib H.occupation=MidLow    -7.366734937432272
+    Attrib H.occupation=MidHigh    4.145510959631274
+    Attrib H.occupation=High    5.139811159412933
+    Attrib Standard-of-living=Low    -5.126069584504584
+    Attrib Standard-of-living=MidLow    6.590260331065364
+    Attrib Standard-of-living=MidHigh    3.3655541511623412
+    Attrib Standard-of-living=High    -0.695252868424122
+    Attrib MediaExposure=NotGood    6.380020887012509
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    0.17302012594236083
+    Attrib W.Age    7.026315455171578
+    Attrib W.Education=Low    0.2322514893468699
+    Attrib W.Education=MidLow    -0.6086823685838268
+    Attrib W.Education=MidHigh    -5.308743738383673
+    Attrib W.Education=High    5.325036475206244
+    Attrib H.Education=Low    4.674742448777871
+    Attrib H.Education=MidLow    0.5967831810888912
+    Attrib H.Education=MidHigh    -3.7040168567417804
+    Attrib H.Education=High    -1.7935970360098454
+    Attrib Children    -5.367614888720989
+    Attrib W.Islamic=Islamic    -5.086585000768079
+    Attrib W.Working=No    -9.329776783008615
+    Attrib H.occupation=Low    -0.9393841929436606
+    Attrib H.occupation=MidLow    -3.343817531932051
+    Attrib H.occupation=MidHigh    1.2091105446469526
+    Attrib H.occupation=High    2.847126640669364
+    Attrib Standard-of-living=Low    12.120135768785177
+    Attrib Standard-of-living=MidLow    -7.708512721849997
+    Attrib Standard-of-living=MidHigh    0.6006418058945668
+    Attrib Standard-of-living=High    -5.243984867656139
+    Attrib MediaExposure=NotGood    8.666314218447573
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -4.16508728926636
+    Attrib W.Age    28.70879612958819
+    Attrib W.Education=Low    4.628334681253485
+    Attrib W.Education=MidLow    -0.4647885057939053
+    Attrib W.Education=MidHigh    5.5185339113400715
+    Attrib W.Education=High    -1.3249691715711103
+    Attrib H.Education=Low    8.604289092406805
+    Attrib H.Education=MidLow    4.359953360743748
+    Attrib H.Education=MidHigh    -1.5458088496508355
+    Attrib H.Education=High    -3.208385070262775
+    Attrib Children    -0.2982324104064246
+    Attrib W.Islamic=Islamic    4.864166164656195
+    Attrib W.Working=No    11.334712059373421
+    Attrib H.occupation=Low    1.266149694936353
+    Attrib H.occupation=MidLow    4.10200295342093
+    Attrib H.occupation=MidHigh    2.1171156514026546
+    Attrib H.occupation=High    0.7906285012462
+    Attrib Standard-of-living=Low    -2.5000259536461833
+    Attrib Standard-of-living=MidLow    2.8398503200852683
+    Attrib Standard-of-living=MidHigh    3.16597700623528
+    Attrib Standard-of-living=High    4.72681285196276
+    Attrib MediaExposure=NotGood    6.271128982061212
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -3.0266400180379005
+    Attrib W.Age    15.647005602650438
+    Attrib W.Education=Low    7.134244297792915
+    Attrib W.Education=MidLow    1.5048445861016142
+    Attrib W.Education=MidHigh    -1.8998706948182706
+    Attrib W.Education=High    -0.7651284483051084
+    Attrib H.Education=Low    2.1943898470806342
+    Attrib H.Education=MidLow    0.9291101645004316
+    Attrib H.Education=MidHigh    -0.17208728511325752
+    Attrib H.Education=High    2.8817751817776838
+    Attrib Children    -22.386289626288715
+    Attrib W.Islamic=Islamic    -4.324612710869383
+    Attrib W.Working=No    -3.905969540580825
+    Attrib H.occupation=Low    2.504265769051666
+    Attrib H.occupation=MidLow    -1.7070310358033944
+    Attrib H.occupation=MidHigh    -0.09767781016504025
+    Attrib H.occupation=High    5.2524630222875155
+    Attrib Standard-of-living=Low    6.404241372105619
+    Attrib Standard-of-living=MidLow    2.6426407721686376
+    Attrib Standard-of-living=MidHigh    2.0612344697162883
+    Attrib Standard-of-living=High    -5.098578240008178
+    Attrib MediaExposure=NotGood    3.2042993991668896
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -4.20832801136559
+    Attrib W.Age    0.9778872315413385
+    Attrib W.Education=Low    9.92458152711789
+    Attrib W.Education=MidLow    -0.4161215830313204
+    Attrib W.Education=MidHigh    5.067058594006314
+    Attrib W.Education=High    -6.1283585867446435
+    Attrib H.Education=Low    -3.794059181406778
+    Attrib H.Education=MidLow    5.275368289548227
+    Attrib H.Education=MidHigh    -1.7754350990430015
+    Attrib H.Education=High    8.760021393607898
+    Attrib Children    1.1024548322217418
+    Attrib W.Islamic=Islamic    7.989747459582912
+    Attrib W.Working=No    -1.356854849328875
+    Attrib H.occupation=Low    -2.295569814943131
+    Attrib H.occupation=MidLow    7.921835512102186
+    Attrib H.occupation=MidHigh    5.674491151307494
+    Attrib H.occupation=High    -2.9234147830724977
+    Attrib Standard-of-living=Low    2.965130829612682
+    Attrib Standard-of-living=MidLow    5.879347076822268
+    Attrib Standard-of-living=MidHigh    -0.8565302630785121
+    Attrib Standard-of-living=High    0.38189814064823613
+    Attrib MediaExposure=NotGood    -5.151308989574767
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -2.1139037547780335
+    Attrib W.Age    12.32655851298465
+    Attrib W.Education=Low    -0.26237274599913457
+    Attrib W.Education=MidLow    2.1393820986558705
+    Attrib W.Education=MidHigh    5.489503264866926
+    Attrib W.Education=High    -3.0606974060103562
+    Attrib H.Education=Low    1.451981489289194
+    Attrib H.Education=MidLow    -1.3732216496210223
+    Attrib H.Education=MidHigh    -2.2889042699008777
+    Attrib H.Education=High    6.501835286486384
+    Attrib Children    -1.575642845423984
+    Attrib W.Islamic=Islamic    -7.436718687749215
+    Attrib W.Working=No    -3.324076276465693
+    Attrib H.occupation=Low    -8.497100317786476
+    Attrib H.occupation=MidLow    6.344340787587822
+    Attrib H.occupation=MidHigh    2.5597796036429656
+    Attrib H.occupation=High    3.8737488779884117
+    Attrib Standard-of-living=Low    0.9010825898037476
+    Attrib Standard-of-living=MidLow    -0.014213946124065456
+    Attrib Standard-of-living=MidHigh    9.574820608557127
+    Attrib Standard-of-living=High    -6.161693803103994
+    Attrib MediaExposure=NotGood    6.175571698339984
+Class No-Use
+    Input
+    Node 0
+Class Long-Term
+    Input
+    Node 1
+Class Short-Term
+    Input
+    Node 2
+
+
+Time taken to build model: 4.32 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         771               52.3422 %
+Incorrectly Classified Instances       702               47.6578 %
+Kappa statistic                          0.2599
+Mean absolute error                      0.3434
+Root mean squared error                  0.4633
+Relative absolute error                 79.7012 %
+Root relative squared error             99.8144 %
+Total Number of Instances             1473     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,615    0,299    0,606      0,615    0,610      0,316    0,710     0,687     No-Use
+                 0,405    0,155    0,433      0,405    0,419      0,256    0,704     0,383     Long-Term
+                 0,487    0,284    0,477      0,487    0,482      0,203    0,668     0,472     Short-Term
+Weighted Avg.    0,523    0,261    0,522      0,523    0,523      0,263    0,694     0,544     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 387  70 172 |   a = No-Use
+  97 135 101 |   b = Long-Term
+ 155 107 249 |   c = Short-Term
+

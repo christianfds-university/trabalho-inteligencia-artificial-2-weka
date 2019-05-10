@@ -1,0 +1,320 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     CMC
+Instances:    1473
+Attributes:   10
+              W.Age
+              W.Education
+              H.Education
+              Children
+              W.Islamic
+              W.Working
+              H.occupation
+              Standard-of-living
+              MediaExposure
+              MethodUsed
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Children <= 0: No-Use (97.0/2.0)
+Children > 0
+|   W.Age <= 37
+|   |   W.Education = Low
+|   |   |   Children <= 6
+|   |   |   |   H.Education = Low: No-Use (8.0/3.0)
+|   |   |   |   H.Education = MidLow: Short-Term (25.0/7.0)
+|   |   |   |   H.Education = MidHigh: Short-Term (16.0/6.0)
+|   |   |   |   H.Education = High
+|   |   |   |   |   Children <= 2: No-Use (6.0/1.0)
+|   |   |   |   |   Children > 2: Short-Term (3.0)
+|   |   |   Children > 6
+|   |   |   |   W.Age <= 32: No-Use (2.0)
+|   |   |   |   W.Age > 32: Long-Term (2.0)
+|   |   W.Education = MidLow
+|   |   |   Children <= 2
+|   |   |   |   W.Working = Yes
+|   |   |   |   |   W.Age <= 23: Short-Term (2.0)
+|   |   |   |   |   W.Age > 23: No-Use (16.0/3.0)
+|   |   |   |   W.Working = No
+|   |   |   |   |   H.occupation = Low
+|   |   |   |   |   |   Children <= 1: No-Use (4.0/1.0)
+|   |   |   |   |   |   Children > 1
+|   |   |   |   |   |   |   W.Age <= 25: No-Use (2.0/1.0)
+|   |   |   |   |   |   |   W.Age > 25: Long-Term (2.0)
+|   |   |   |   |   H.occupation = MidLow
+|   |   |   |   |   |   Children <= 1: No-Use (12.0/3.0)
+|   |   |   |   |   |   Children > 1: Short-Term (8.0/2.0)
+|   |   |   |   |   H.occupation = MidHigh: No-Use (55.0/22.0)
+|   |   |   |   |   H.occupation = High: Short-Term (1.0)
+|   |   |   Children > 2
+|   |   |   |   W.Age <= 24: No-Use (15.0/5.0)
+|   |   |   |   W.Age > 24
+|   |   |   |   |   H.Education = Low: Long-Term (3.0/1.0)
+|   |   |   |   |   H.Education = MidLow
+|   |   |   |   |   |   Standard-of-living = Low
+|   |   |   |   |   |   |   W.Working = Yes: No-Use (2.0)
+|   |   |   |   |   |   |   W.Working = No: Short-Term (5.0/1.0)
+|   |   |   |   |   |   Standard-of-living = MidLow
+|   |   |   |   |   |   |   Children <= 7: Short-Term (4.0)
+|   |   |   |   |   |   |   Children > 7: No-Use (2.0/1.0)
+|   |   |   |   |   |   Standard-of-living = MidHigh
+|   |   |   |   |   |   |   W.Age <= 33: Short-Term (9.0/4.0)
+|   |   |   |   |   |   |   W.Age > 33: No-Use (2.0)
+|   |   |   |   |   |   Standard-of-living = High
+|   |   |   |   |   |   |   H.occupation = Low: Long-Term (0.0)
+|   |   |   |   |   |   |   H.occupation = MidLow: Short-Term (3.0/1.0)
+|   |   |   |   |   |   |   H.occupation = MidHigh: Long-Term (5.0/1.0)
+|   |   |   |   |   |   |   H.occupation = High: Long-Term (0.0)
+|   |   |   |   |   H.Education = MidHigh
+|   |   |   |   |   |   MediaExposure = Good
+|   |   |   |   |   |   |   W.Islamic = Non-Islamic: No-Use (2.0)
+|   |   |   |   |   |   |   W.Islamic = Islamic: Short-Term (44.0/15.0)
+|   |   |   |   |   |   MediaExposure = NotGood
+|   |   |   |   |   |   |   W.Age <= 34: Long-Term (2.0/1.0)
+|   |   |   |   |   |   |   W.Age > 34: No-Use (2.0)
+|   |   |   |   |   H.Education = High
+|   |   |   |   |   |   W.Islamic = Non-Islamic: Long-Term (2.0)
+|   |   |   |   |   |   W.Islamic = Islamic: Short-Term (40.0/12.0)
+|   |   W.Education = MidHigh
+|   |   |   Children <= 2
+|   |   |   |   W.Age <= 30
+|   |   |   |   |   H.Education = Low: Long-Term (2.0)
+|   |   |   |   |   H.Education = MidLow
+|   |   |   |   |   |   W.Age <= 24: Short-Term (5.0/1.0)
+|   |   |   |   |   |   W.Age > 24: No-Use (2.0)
+|   |   |   |   |   H.Education = MidHigh
+|   |   |   |   |   |   W.Age <= 25
+|   |   |   |   |   |   |   W.Working = Yes: No-Use (5.0/1.0)
+|   |   |   |   |   |   |   W.Working = No
+|   |   |   |   |   |   |   |   Children <= 1
+|   |   |   |   |   |   |   |   |   W.Age <= 24: Short-Term (14.0/2.0)
+|   |   |   |   |   |   |   |   |   W.Age > 24: No-Use (6.0/2.0)
+|   |   |   |   |   |   |   |   Children > 1: No-Use (14.0/7.0)
+|   |   |   |   |   |   W.Age > 25
+|   |   |   |   |   |   |   W.Age <= 28: Long-Term (8.0/3.0)
+|   |   |   |   |   |   |   W.Age > 28: Short-Term (4.0/1.0)
+|   |   |   |   |   H.Education = High
+|   |   |   |   |   |   Standard-of-living = Low: No-Use (5.0/1.0)
+|   |   |   |   |   |   Standard-of-living = MidLow
+|   |   |   |   |   |   |   H.occupation = Low: Short-Term (1.0)
+|   |   |   |   |   |   |   H.occupation = MidLow: No-Use (4.0)
+|   |   |   |   |   |   |   H.occupation = MidHigh
+|   |   |   |   |   |   |   |   W.Age <= 20: No-Use (3.0/1.0)
+|   |   |   |   |   |   |   |   W.Age > 20: Short-Term (2.0)
+|   |   |   |   |   |   |   H.occupation = High: No-Use (0.0)
+|   |   |   |   |   |   Standard-of-living = MidHigh
+|   |   |   |   |   |   |   W.Islamic = Non-Islamic: Long-Term (3.0/1.0)
+|   |   |   |   |   |   |   W.Islamic = Islamic
+|   |   |   |   |   |   |   |   W.Working = Yes: No-Use (2.0)
+|   |   |   |   |   |   |   |   W.Working = No
+|   |   |   |   |   |   |   |   |   H.occupation = Low
+|   |   |   |   |   |   |   |   |   |   W.Age <= 26: Short-Term (2.0)
+|   |   |   |   |   |   |   |   |   |   W.Age > 26: No-Use (3.0/1.0)
+|   |   |   |   |   |   |   |   |   H.occupation = MidLow
+|   |   |   |   |   |   |   |   |   |   W.Age <= 22: No-Use (3.0)
+|   |   |   |   |   |   |   |   |   |   W.Age > 22: Short-Term (2.0)
+|   |   |   |   |   |   |   |   |   H.occupation = MidHigh: Short-Term (12.0/6.0)
+|   |   |   |   |   |   |   |   |   H.occupation = High: Short-Term (0.0)
+|   |   |   |   |   |   Standard-of-living = High
+|   |   |   |   |   |   |   W.Working = Yes: Short-Term (5.0)
+|   |   |   |   |   |   |   W.Working = No
+|   |   |   |   |   |   |   |   W.Islamic = Non-Islamic: Short-Term (2.0)
+|   |   |   |   |   |   |   |   W.Islamic = Islamic: Long-Term (12.0/7.0)
+|   |   |   |   W.Age > 30: No-Use (18.0/4.0)
+|   |   |   Children > 2
+|   |   |   |   H.occupation = Low
+|   |   |   |   |   Standard-of-living = Low: No-Use (1.0)
+|   |   |   |   |   Standard-of-living = MidLow: Long-Term (5.0/2.0)
+|   |   |   |   |   Standard-of-living = MidHigh: Long-Term (12.0/4.0)
+|   |   |   |   |   Standard-of-living = High
+|   |   |   |   |   |   Children <= 3: Long-Term (6.0/2.0)
+|   |   |   |   |   |   Children > 3
+|   |   |   |   |   |   |   W.Age <= 30: No-Use (2.0)
+|   |   |   |   |   |   |   W.Age > 30: Short-Term (8.0/1.0)
+|   |   |   |   H.occupation = MidLow
+|   |   |   |   |   Children <= 5: Short-Term (40.0/16.0)
+|   |   |   |   |   Children > 5: No-Use (10.0/3.0)
+|   |   |   |   H.occupation = MidHigh
+|   |   |   |   |   W.Age <= 31: Short-Term (43.0/10.0)
+|   |   |   |   |   W.Age > 31
+|   |   |   |   |   |   Children <= 6
+|   |   |   |   |   |   |   H.Education = Low: Long-Term (0.0)
+|   |   |   |   |   |   |   H.Education = MidLow: Long-Term (2.0/1.0)
+|   |   |   |   |   |   |   H.Education = MidHigh
+|   |   |   |   |   |   |   |   Children <= 3: No-Use (2.0/1.0)
+|   |   |   |   |   |   |   |   Children > 3: Long-Term (7.0/1.0)
+|   |   |   |   |   |   |   H.Education = High: Short-Term (10.0/4.0)
+|   |   |   |   |   |   Children > 6
+|   |   |   |   |   |   |   W.Age <= 35: Short-Term (3.0)
+|   |   |   |   |   |   |   W.Age > 35: No-Use (3.0/1.0)
+|   |   |   |   H.occupation = High: Short-Term (0.0)
+|   |   W.Education = High
+|   |   |   MediaExposure = Good
+|   |   |   |   Children <= 2
+|   |   |   |   |   H.occupation = Low
+|   |   |   |   |   |   W.Working = Yes
+|   |   |   |   |   |   |   W.Islamic = Non-Islamic
+|   |   |   |   |   |   |   |   Standard-of-living = Low: Long-Term (0.0)
+|   |   |   |   |   |   |   |   Standard-of-living = MidLow: Long-Term (0.0)
+|   |   |   |   |   |   |   |   Standard-of-living = MidHigh: Short-Term (3.0/1.0)
+|   |   |   |   |   |   |   |   Standard-of-living = High: Long-Term (4.0/1.0)
+|   |   |   |   |   |   |   W.Islamic = Islamic
+|   |   |   |   |   |   |   |   Children <= 1
+|   |   |   |   |   |   |   |   |   W.Age <= 27: Long-Term (6.0/3.0)
+|   |   |   |   |   |   |   |   |   W.Age > 27: No-Use (3.0)
+|   |   |   |   |   |   |   |   Children > 1
+|   |   |   |   |   |   |   |   |   Standard-of-living = Low: Long-Term (0.0)
+|   |   |   |   |   |   |   |   |   Standard-of-living = MidLow: Long-Term (0.0)
+|   |   |   |   |   |   |   |   |   Standard-of-living = MidHigh
+|   |   |   |   |   |   |   |   |   |   W.Age <= 30: Long-Term (5.0)
+|   |   |   |   |   |   |   |   |   |   W.Age > 30: No-Use (2.0/1.0)
+|   |   |   |   |   |   |   |   |   Standard-of-living = High: Short-Term (9.0/5.0)
+|   |   |   |   |   |   W.Working = No
+|   |   |   |   |   |   |   Children <= 1
+|   |   |   |   |   |   |   |   W.Age <= 24: Long-Term (17.0/7.0)
+|   |   |   |   |   |   |   |   W.Age > 24: No-Use (25.0/12.0)
+|   |   |   |   |   |   |   Children > 1
+|   |   |   |   |   |   |   |   W.Islamic = Non-Islamic
+|   |   |   |   |   |   |   |   |   W.Age <= 29: Long-Term (3.0)
+|   |   |   |   |   |   |   |   |   W.Age > 29: No-Use (6.0/3.0)
+|   |   |   |   |   |   |   |   W.Islamic = Islamic
+|   |   |   |   |   |   |   |   |   W.Age <= 28: Short-Term (13.0/6.0)
+|   |   |   |   |   |   |   |   |   W.Age > 28: No-Use (11.0/5.0)
+|   |   |   |   |   H.occupation = MidLow: Short-Term (50.0/24.0)
+|   |   |   |   |   H.occupation = MidHigh
+|   |   |   |   |   |   W.Working = Yes
+|   |   |   |   |   |   |   Children <= 1: No-Use (6.0/3.0)
+|   |   |   |   |   |   |   Children > 1
+|   |   |   |   |   |   |   |   W.Age <= 31: Short-Term (4.0/1.0)
+|   |   |   |   |   |   |   |   W.Age > 31: Long-Term (4.0/1.0)
+|   |   |   |   |   |   W.Working = No: Short-Term (39.0/17.0)
+|   |   |   |   |   H.occupation = High: Short-Term (1.0)
+|   |   |   |   Children > 2
+|   |   |   |   |   W.Age <= 28
+|   |   |   |   |   |   H.occupation = Low
+|   |   |   |   |   |   |   Standard-of-living = Low: No-Use (0.0)
+|   |   |   |   |   |   |   Standard-of-living = MidLow: No-Use (1.0)
+|   |   |   |   |   |   |   Standard-of-living = MidHigh: Long-Term (2.0)
+|   |   |   |   |   |   |   Standard-of-living = High: No-Use (8.0/2.0)
+|   |   |   |   |   |   H.occupation = MidLow: No-Use (4.0/2.0)
+|   |   |   |   |   |   H.occupation = MidHigh: Short-Term (12.0/2.0)
+|   |   |   |   |   |   H.occupation = High: Short-Term (0.0)
+|   |   |   |   |   W.Age > 28
+|   |   |   |   |   |   Standard-of-living = Low: Long-Term (1.0)
+|   |   |   |   |   |   Standard-of-living = MidLow
+|   |   |   |   |   |   |   W.Age <= 33: Long-Term (3.0)
+|   |   |   |   |   |   |   W.Age > 33: No-Use (4.0/2.0)
+|   |   |   |   |   |   Standard-of-living = MidHigh: Long-Term (24.0/11.0)
+|   |   |   |   |   |   Standard-of-living = High
+|   |   |   |   |   |   |   W.Working = Yes
+|   |   |   |   |   |   |   |   W.Age <= 33: Short-Term (13.0/3.0)
+|   |   |   |   |   |   |   |   W.Age > 33: Long-Term (13.0/5.0)
+|   |   |   |   |   |   |   W.Working = No
+|   |   |   |   |   |   |   |   H.occupation = Low
+|   |   |   |   |   |   |   |   |   W.Islamic = Non-Islamic: Short-Term (5.0/2.0)
+|   |   |   |   |   |   |   |   |   W.Islamic = Islamic: Long-Term (35.0/18.0)
+|   |   |   |   |   |   |   |   H.occupation = MidLow
+|   |   |   |   |   |   |   |   |   Children <= 3
+|   |   |   |   |   |   |   |   |   |   W.Islamic = Non-Islamic: Long-Term (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   W.Islamic = Islamic: Short-Term (4.0)
+|   |   |   |   |   |   |   |   |   Children > 3: Long-Term (8.0/1.0)
+|   |   |   |   |   |   |   |   H.occupation = MidHigh
+|   |   |   |   |   |   |   |   |   W.Islamic = Non-Islamic: Short-Term (5.0/1.0)
+|   |   |   |   |   |   |   |   |   W.Islamic = Islamic: Long-Term (7.0/2.0)
+|   |   |   |   |   |   |   |   H.occupation = High: Short-Term (1.0)
+|   |   |   MediaExposure = NotGood: Short-Term (3.0)
+|   W.Age > 37
+|   |   MediaExposure = Good
+|   |   |   Children <= 1: No-Use (35.0/3.0)
+|   |   |   Children > 1
+|   |   |   |   W.Education = Low: No-Use (42.0/9.0)
+|   |   |   |   W.Education = MidLow: No-Use (55.0/18.0)
+|   |   |   |   W.Education = MidHigh
+|   |   |   |   |   W.Working = Yes
+|   |   |   |   |   |   H.occupation = Low: Short-Term (5.0/1.0)
+|   |   |   |   |   |   H.occupation = MidLow: Long-Term (3.0/1.0)
+|   |   |   |   |   |   H.occupation = MidHigh
+|   |   |   |   |   |   |   Children <= 5: Short-Term (3.0)
+|   |   |   |   |   |   |   Children > 5: No-Use (2.0/1.0)
+|   |   |   |   |   |   H.occupation = High: Short-Term (0.0)
+|   |   |   |   |   W.Working = No: No-Use (64.0/27.0)
+|   |   |   |   W.Education = High
+|   |   |   |   |   W.Age <= 48
+|   |   |   |   |   |   H.Education = Low: Long-Term (0.0)
+|   |   |   |   |   |   H.Education = MidLow: No-Use (1.0)
+|   |   |   |   |   |   H.Education = MidHigh
+|   |   |   |   |   |   |   H.occupation = Low: Long-Term (3.0/1.0)
+|   |   |   |   |   |   |   H.occupation = MidLow: Long-Term (1.0)
+|   |   |   |   |   |   |   H.occupation = MidHigh: Short-Term (3.0)
+|   |   |   |   |   |   |   H.occupation = High: Short-Term (0.0)
+|   |   |   |   |   |   H.Education = High
+|   |   |   |   |   |   |   Children <= 2
+|   |   |   |   |   |   |   |   W.Islamic = Non-Islamic: Short-Term (4.0/1.0)
+|   |   |   |   |   |   |   |   W.Islamic = Islamic
+|   |   |   |   |   |   |   |   |   W.Age <= 38: Short-Term (3.0/1.0)
+|   |   |   |   |   |   |   |   |   W.Age > 38: No-Use (6.0/2.0)
+|   |   |   |   |   |   |   Children > 2
+|   |   |   |   |   |   |   |   W.Working = Yes: Long-Term (27.0/5.0)
+|   |   |   |   |   |   |   |   W.Working = No
+|   |   |   |   |   |   |   |   |   W.Age <= 39: Long-Term (16.0/3.0)
+|   |   |   |   |   |   |   |   |   W.Age > 39
+|   |   |   |   |   |   |   |   |   |   Children <= 6
+|   |   |   |   |   |   |   |   |   |   |   W.Age <= 46
+|   |   |   |   |   |   |   |   |   |   |   |   H.occupation = Low: Long-Term (41.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   H.occupation = MidLow
+|   |   |   |   |   |   |   |   |   |   |   |   |   W.Age <= 42: Short-Term (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   W.Age > 42: No-Use (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   H.occupation = MidHigh
+|   |   |   |   |   |   |   |   |   |   |   |   |   W.Age <= 41: No-Use (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   W.Age > 41: Long-Term (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   H.occupation = High: Long-Term (0.0)
+|   |   |   |   |   |   |   |   |   |   |   W.Age > 46
+|   |   |   |   |   |   |   |   |   |   |   |   W.Islamic = Non-Islamic: Long-Term (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   W.Islamic = Islamic: No-Use (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Children > 6
+|   |   |   |   |   |   |   |   |   |   |   Children <= 9: Long-Term (11.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   Children > 9: Short-Term (3.0/1.0)
+|   |   |   |   |   W.Age > 48
+|   |   |   |   |   |   Children <= 8: No-Use (6.0)
+|   |   |   |   |   |   Children > 8: Long-Term (2.0/1.0)
+|   |   MediaExposure = NotGood: No-Use (48.0/4.0)
+
+Number of Leaves  : 	157
+
+Size of the tree : 	263
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         768               52.1385 %
+Incorrectly Classified Instances       705               47.8615 %
+Kappa statistic                          0.2549
+Mean absolute error                      0.356 
+Root mean squared error                  0.4736
+Relative absolute error                 82.6287 %
+Root relative squared error            102.0514 %
+Total Number of Instances             1473     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,609    0,287    0,613      0,609    0,611      0,322    0,694     0,608     No-Use
+                 0,378    0,138    0,445      0,378    0,409      0,256    0,663     0,361     Long-Term
+                 0,507    0,318    0,458      0,507    0,481      0,185    0,622     0,431     Short-Term
+Weighted Avg.    0,521    0,264    0,521      0,521    0,520      0,260    0,662     0,491     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 383  61 185 |   a = No-Use
+  86 126 121 |   b = Long-Term
+ 156  96 259 |   c = Short-Term
+
